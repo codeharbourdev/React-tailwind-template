@@ -2,6 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +19,9 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1 className='text-red-500 bg-yellow-500'>Vite + React</h1>
+      <h1 className='text-red-500 bg-yellow-500'>Vite + React 
+        <FontAwesomeIcon icon={faBars} className="text-xl text-gray-700" />
+      </h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
